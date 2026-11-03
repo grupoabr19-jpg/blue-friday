@@ -1,0 +1,2 @@
+const loginCard=document.querySelector('#loginCard'),dashboard=document.querySelector('#dashboardCard');document.querySelector('#loginForm').addEventListener('submit',e=>{e.preventDefault();loginCard.hidden=true;dashboard.hidden=false});document.querySelector('#invoiceInput').addEventListener('change',e=>{const files=[...e.target.files];document.querySelector('#uploadStatus').textContent=files.length?`${files.length} nota(s) recebida(s). Status: aguardando validaÃ§Ã£o do time ABR.`:''});
+
