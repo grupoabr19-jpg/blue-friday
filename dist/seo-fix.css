@@ -1,0 +1,7 @@
+/* Keep the official artwork isolated from decorative layers. */
+.hero-visual { display:grid; place-items:center; isolation:isolate; background:#eef1f5; overflow:hidden; }
+.hero-visual::before { z-index:0; opacity:.18; }
+.hero-visual img { position:relative; z-index:1; display:block; width:min(100%, 510px); height:auto; max-height:100%; object-fit:contain; object-position:center; filter:drop-shadow(0 20px 24px rgba(20,39,88,.18)); }
+.hero-copy, .hero-visual { min-width:0; }
+@media (max-width:800px){.hero-visual img{width:min(100%,360px)}.hero-visual{min-height:340px}}
+
